@@ -1,0 +1,48 @@
+.single-room_details {
+  background-color: #f1f1f1;
+  color: #898989;
+  padding: 20px;
+  margin-top: 20px;
+
+  .single-room_title {
+    text-transform: capitalize;
+    font-family: $font-family-playfair;
+    color: $color-blue-dark;
+    margin-bottom: 10px;
+    font-size: 24px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  .single-room_booking-details {
+    .single-room_available {
+      font-size: 16px;
+      color: #898989;
+      margin-bottom: 5px;
+    }
+    .single-room_price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .single-room_price-title {
+        color: #898989;
+        color: $color-black;
+        font-size: 25px;
+      }
+      .btn-single-room {
+        width: 174px;
+        padding: 7px;
+        font-weight: 700;
+        color: white;
+        background: $color-orange;
+        border: 2px solid $color-orange;
+        &:hover {
+          background: white;
+          border: 2px solid $color-orange;
+          color: $color-orange;
+        }
+      }
+    }
+  }
+}

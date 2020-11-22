@@ -1,0 +1,32 @@
+.section-reservation-page {
+  padding-bottom: 50px;
+  padding-top: 40px;
+  .col-lg-offset-1 {
+  }
+  @media (max-width: 992px) {
+    padding-bottom: 40px;
+  }
+  .sidebar {
+    margin-right: 0;
+    .check_availability_title {
+      font-weight: 600 !important;
+    }
+  }
+}
+
+.reservation_content {
+  padding-bottom: 20px;
+  margin-left: 20px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+  &.bg-gray {
+    background: #f1f1f1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

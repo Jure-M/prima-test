@@ -1,0 +1,115 @@
+.testimonials {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  width: 100%;
+
+  .testimonials-h {
+    min-height: 280px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.75);
+
+    .testimonials-content {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      .img-testimonials {
+        display: inline-block;
+        min-width: 115px;
+        min-height: 115px;
+        margin-bottom: 30px;
+        border-radius: 100%;
+        img {
+          max-width: 100%;
+          text-align: center;
+          border-radius: 100%;
+        }
+      }
+      .testimonials-p {
+        font-weight: 300;
+        font-size: 16px;
+        color: #fff;
+        padding: 0px 8%;
+        margin-bottom: 26px;
+        span {
+          font-family: "Montserrat", sans-serif;
+          font-size: 40px;
+          line-height: 0;
+          position: relative;
+          top: 12px;
+        }
+      }
+      .testimonials-p1 {
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        margin-top: -4px;
+        margin-bottom: 42px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 1200px) {
+  .testimonials {
+    .testimonials-h {
+      .testimonials-content {
+        .testimonials-p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    .testimonials-h {
+      min-height: 180px;
+      .testimonials-content {
+        top: 20%;
+        .img-testimonials {
+          margin-bottom: 10px;
+        }
+        .testimonials-p {
+          font-size: 12px;
+          padding: 0;
+          margin-bottom: 0;
+          span {
+            font-size: 28px;
+          }
+        }
+        .testimonials-p1 {
+          font-size: 13px;
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    .testimonials-h {
+      .testimonials-content {
+        .img-testimonials {
+          margin-bottom: 0px;
+        }
+        .testimonials-p {
+          font-size: 10px;
+          padding: 0;
+          margin-bottom: 0;
+        }
+        .sky-h5 {
+          font-size: 14px;
+        }
+        .testimonials-p1 {
+          font-size: 13px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

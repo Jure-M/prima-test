@@ -1,0 +1,132 @@
+//2.3 Footer
+//================ FOOTER================//
+.footer-sky {
+  .footer-mid {
+    background: $color-black;
+    .padding-footer-mid {
+      padding: 85px 0px 30px 0px;
+      display: flex;
+      justify-content: space-between;
+      .list-content {
+        ul {
+          padding: 0;
+          li {
+            list-style: none;
+            margin-bottom: 15px;
+
+            .footer-title {
+              margin-bottom: 20px;
+              color: $color-orange;
+              font-family: $font-family-playfair;
+              font-size: 18px;
+            }
+            .footer-text {
+              color: #ebebeb;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: "Poppins", sans-serif;
+            }
+          }
+        }
+      }
+    }
+    .footer-copy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 30px;
+      color: #ebebeb;
+      font-size: 14px;
+      .footer-icons {
+        font-size: 25px;
+        margin-left: 15px;
+      }
+      p {
+        margin-bottom: 0px;
+        margin-right: auto;
+      }
+      .footer-icons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 991px) {
+  .footer-sky {
+    .footer-mid {
+      .padding-footer-mid {
+        padding: 15px 0px 25px 0px;
+        .list-content {
+          text-align: center;
+          margin-top: 35px;
+          margin-bottom: 10px;
+          img {
+            max-width: 170px;
+            vertical-align: middle;
+          }
+          ul {
+            li {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-sky {
+    .footer-mid {
+      .padding-footer-mid {
+        padding: 5px 0px 20px 0px;
+        .footer-item {
+          display: none;
+          .list-content {
+            text-align: center;
+            img {
+              max-width: 170px;
+              vertical-align: middle;
+            }
+            margin-top: 35px;
+            margin-bottom: 10px;
+            ul {
+              li {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .footer-copy {
+        .footer-icons {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-sky {
+    .footer-mid {
+      .padding-footer-mid {
+        .col-xs-4 {
+          width: 100%;
+        }
+        padding: 15px 0px 40px 0px;
+        .list-content {
+          ul {
+            li {
+              padding-left: 10%;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//================ END FOOTER================//

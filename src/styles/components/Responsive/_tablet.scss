@@ -1,0 +1,87 @@
+// 4.2 Table
+@media (min-width: 768px) and(max-width: 991px) {
+  .section-map-v4 {
+    iframe {
+      height: 40rem;
+    }
+  }
+  /* SECTION-SLIDER  */
+
+  /* END/SECTION-SLIsDER */
+  /* UOR  GALLERY */
+  .gallery-our {
+    .gallery {
+      margin: 0;
+    }
+  }
+  /* END/OUR GALLERY*/
+  /* NEWS */
+  .news {
+    padding-top: 0px;
+    padding-bottom: 75px;
+    .text {
+      a {
+        font-size: 18px !important;
+      }
+    }
+  }
+  /* END/NEWS*/
+  /* BEST */
+
+  /* END/BEST*/
+
+  /*ROOMS */
+
+  /* END / ROOMS */
+
+  /* NAV-HEADER */
+  .header-sky {
+    &.header-top-sky {
+      .menu-header {
+        height: 80px !important;
+      }
+    }
+    .navbar {
+      .navbar-header {
+        .navbar-brand {
+          img {
+            width: 150px;
+          }
+        }
+      }
+      .navbar-nav {
+        li {
+          padding: 30px 10px;
+          a {
+            font-size: 10px;
+            .caret {
+              border-top: 3px dashed;
+              border-top: 3px solid \9;
+              border-right: 3px solid transparent;
+              border-left: 3px solid transparent;
+            }
+          }
+          .dropdown-menu {
+            min-width: 120px;
+          }
+        }
+      }
+    }
+  }
+  /* END / NAV-HEADER */
+
+  .check-out {
+    .col-lg-offset-1 {
+      margin-left: auto;
+    }
+    .col-lg-5 {
+      width: auto;
+    }
+  }
+
+  .section-team {
+    padding-bottom: 80px;
+  }
+}
+
+/* End-min-width:768px */

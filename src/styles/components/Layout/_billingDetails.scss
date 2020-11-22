@@ -1,0 +1,89 @@
+.reservation-billing-detail {
+  max-width: 570px;
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+  h4 {
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 30px;
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+  label {
+    color: $color-black;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    sup {
+      color: $color-orange;
+      font-size: 13px;
+      line-height: 0px;
+      top: 0px;
+      left: 4px;
+    }
+    &.label-radio {
+      .input-radio {
+        margin: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .input-text,
+  .input-textarea {
+    border: 1px solid $color-blue;
+    width: 100%;
+    font-size: 14px;
+    color: #333333;
+    font-weight: normal;
+    height: 43px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 20px;
+    &::placeholder {
+      color: #333;
+    }
+  }
+  .input-text:focus,
+  .input-textarea:focus,
+  .input-text:active,
+  .input-textarea:focus {
+    border: 1px solid $color-blue-light;
+  }
+
+  .input-textarea {
+    height: 85px;
+  }
+
+  .btn4 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 170px;
+    height: 48px;
+    &:hover {
+      border: 2px solid $color-hover;
+    }
+  }
+  .error {
+    margin-top: 15px;
+    background-color: #fc7168;
+
+    p {
+      color: #fff;
+      padding: 4px 2px;
+      font-size: 12px;
+    }
+  }
+}

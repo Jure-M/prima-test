@@ -1,0 +1,97 @@
+// 4.3 Mobile
+@media (max-width: 767px) {
+  /* BODY-RESTAURANT */
+  .body-restaurant {
+    .restaurant_item {
+      .text {
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .body-restaurant-2 {
+    .nav {
+      text-align: center;
+      li {
+        float: none;
+        width: 100%;
+        padding-top: 12px;
+        display: block;
+        border-bottom: 2px solid #e7e7e7;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .body-restaurant-3 {
+    .reservation {
+      .reservation_form {
+        .date,
+        .awe-input {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  /* END BODY-RESTAURANT */
+  .header-top {
+    text-align: center;
+    .header-top-left {
+      float: none !important;
+      border-bottom: 1px solid rgba(245, 240, 240, 0.23);
+    }
+    .header-top-right {
+      float: none !important;
+      display: inline-block;
+      line-height: 38px;
+      margin-bottom: -8px;
+      .icon-v3-top {
+        float: left;
+      }
+      ul {
+        float: left;
+      }
+    }
+  }
+
+  .navbar-header-v3 {
+    background: rgba(9, 8, 8, 0.79);
+    .navbar-nav {
+    }
+  }
+  /* UOR  GALLERY */
+  .gallery-our {
+    padding-top: 20px;
+    .gallery {
+      margin: 0;
+      .nav-tabs {
+        li {
+          float: none;
+          display: inherit;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  /* END/OUR GALLERY*/
+  .gallery__description-block {
+    padding: 10px 0;
+    .gallery__description-block__description {
+      font-size: 12px;
+      margin: 0;
+      padding: 0 20px;
+    }
+  }
+
+  /* NEWS */
+  .news {
+    padding-top: 30px;
+    padding-bottom: 60px !important;
+  }
+  /* END/NEWS*/
+  /* FOOTER */
+
+  /* END/FOOTER*/
+}

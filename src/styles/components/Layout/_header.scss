@@ -1,0 +1,220 @@
+//================ HERO ================//
+.section-hero {
+  position: relative;
+  height: 88vh;
+
+  .check-avail {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 6%;
+    z-index: 9;
+
+    .hero-error {
+      background-color: #e87168;
+      margin-bottom: 10px;
+      width: 96%;
+      border-radius: 2px;
+      p {
+        font-size: 16px;
+        color: $color-black;
+        margin-bottom: 0;
+        padding: 4px 8px;
+      }
+    }
+
+    .date-title {
+      height: 130px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      margin-right: 15px;
+      label {
+        color: $color-orange;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .arrival,
+      .departure {
+        width: 33%;
+        background: #fff;
+        padding: 24px 26px 30px 35px;
+        cursor: pointer;
+        input {
+          height: 55px;
+          border: none;
+          box-shadow: none;
+          padding-left: 0;
+          color: #b3b3b3;
+          font-family: "Playfair", serif;
+          font-size: 35px;
+          padding-right: 0;
+          margin-bottom: 10px;
+          @media (max-width: 1200px) {
+            height: 42px;
+            font-size: 28px;
+          }
+          @media (max-width: 992px) {
+            font-size: 25px;
+          }
+        }
+        .input-group-addon {
+          border: none;
+          @media (max-width: 1200px) {
+            img {
+              width: 45px;
+            }
+          }
+          @media (max-width: 992px) {
+            img {
+              width: 35px;
+            }
+          }
+        }
+      }
+
+      .find_btn {
+        font-family: $font-family-playfair;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: $color-orange;
+        width: 22%;
+        &:hover {
+          background: #fff;
+          border: 2px solid $color-orange;
+          .text-find {
+            color: $color-orange;
+          }
+        }
+        .text-find {
+          text-align: center;
+          font-weight: 600;
+          font-size: 22px;
+          text-transform: capitalize;
+          letter-spacing: 2px;
+          color: white;
+          cursor: pointer;
+          &:hover {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and(max-width: 1200px) {
+  .section-hero {
+    .check-avail {
+      .date-title {
+        height: 100px;
+      }
+      .arrival,
+      .departure {
+        padding: 15px 20px 10px 20px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 991px) {
+  .section-hero {
+    .check-avail {
+      .date-title {
+        height: 85px;
+        label {
+          font-size: 13px;
+        }
+      }
+      .arrival,
+      .departure {
+        padding: 10px 5px 27px 15px !important;
+      }
+    }
+    .find_btn {
+      .text-find {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-hero {
+    .check-avail {
+      padding: 10px;
+      bottom: 0;
+      background: rgba(2, 2, 2, 1);
+      .container {
+        flex-direction: column;
+        align-items: center;
+        .date-title {
+          height: 85px;
+          width: 98%;
+          margin-top: 10px;
+          float: left;
+          margin-right: 0px;
+          label {
+            font-size: 13px;
+          }
+          img {
+            width: 40px;
+          }
+        }
+        .arrival,
+        .departure {
+          padding: 10px 5px 27px 15px;
+        }
+
+        .find_btn {
+          .text-find {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-hero {
+    .check-avail {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        .date-title {
+          height: 85px;
+          width: 95%;
+          margin-top: 10px;
+          label {
+            font-size: 14px;
+          }
+          img {
+            width: 40px;
+          }
+        }
+        .arrival,
+        .departure {
+          padding: 10px 5px 27px 15px;
+        }
+
+        .find_btn {
+          .text-find {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//================END SECTION SLIDER================//

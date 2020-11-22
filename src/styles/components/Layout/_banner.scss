@@ -1,0 +1,45 @@
+.banner-tems {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+
+  .banner-content {
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 16px;
+      color: white;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-tems {
+    padding-top: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-tems {
+    padding-top: 125px;
+    .banner-content {
+      h2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

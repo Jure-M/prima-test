@@ -1,0 +1,118 @@
+.sidebar {
+  margin-right: 40px;
+  .widget {
+    margin-top: 40px;
+    .widget-title {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    &.widget_check_availability {
+      background-color: #f1f1f1;
+      .widget-title {
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        color: #333333;
+        line-height: 50px;
+        font-weight: 700;
+      }
+      .check_availability {
+        padding: 0 20px 30px 20px;
+        border-top: 1px solid #e4e4e4;
+        .check_availability_title {
+          margin-top: 25px;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $color-hover;
+        }
+        .check_availability-field {
+          margin-top: 15px;
+          .date {
+            width: 100%;
+          }
+          .react-datepicker-wrapper {
+            width: 100%;
+            input {
+              color: #898989;
+              width: 100%;
+              height: 30px;
+              border: none;
+              padding-left: 5px;
+            }
+          }
+
+          .wrap-box {
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            border: none;
+            height: 30px;
+            font-weight: 300;
+          }
+
+          .input-group-addon {
+            border-radius: 0;
+            background: transparent;
+            border: none;
+            position: absolute;
+            z-index: 0;
+            right: 13px;
+            top: 7%;
+            height: 30px;
+            color: $color-hover;
+            .fa-calendar {
+              color: #919191;
+            }
+          }
+          label {
+            display: block;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 10px;
+            color: #333333;
+            text-transform: uppercase;
+          }
+        }
+        .btn-room {
+          margin-top: 30px;
+          width: 100%;
+          font-size: 14px;
+          color: $color-white;
+          background: $color-hover;
+          height: 36px;
+          max-width: 260px;
+          margin-right: auto;
+          margin-left: auto;
+          display: block;
+          &:hover {
+            border: 2px solid $color-hover;
+            background: transparent;
+            color: $color-hover;
+          }
+          &:active,
+          &:focus {
+            outline: 1px solid $color-hover;
+          }
+        }
+        .error {
+          margin-top: 15px;
+          background-color: #fc7168;
+
+          p {
+            color: #fff;
+            padding: 4px 2px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

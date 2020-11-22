@@ -1,0 +1,109 @@
+.section-contact {
+  padding-top: 30px;
+  padding-bottom: 65px;
+  @media (max-width: 767px) {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .contact {
+    .text {
+      margin-top: 15px;
+      .contact-icon {
+        margin-right: 5px;
+        color: $color-orange;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 28px;
+        color: $color-black;
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 1.428em;
+        @media (max-width: 767px) {
+          font-size: 14px;
+          margin-top: 15px;
+        }
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 30px;
+        li {
+          padding: 4px 0;
+          .fa {
+            color: $color-orange;
+            font-size: 17px;
+            width: 8%;
+          }
+        }
+      }
+    }
+    .contact-form {
+      .field-textarea {
+        padding-top: 7px;
+      }
+      .field-text,
+      .field-textarea {
+        height: 42px;
+        border: 1px solid $color-blue;
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        &::placeholder {
+          color: $color-black;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: $font-family-Poppins;
+        }
+        &:focus {
+          border: 2px solid $color-blue-light;
+        }
+      }
+      .field-textarea {
+        resize: none;
+        height: 210px;
+      }
+      .btn {
+        margin-top: 15px;
+        width: 200px;
+        font-size: 16px;
+        height: 42px;
+        width: 200px;
+      }
+      .error {
+        width: 100%;
+        margin-top: 15px;
+        background-color: #fc7168;
+        border-radius: 2px;
+        padding: 4px;
+
+        p {
+          color: $color-black;
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+      }
+      .succes {
+        width: 100%;
+        margin-top: 15px;
+        background-color: #bbff99;
+        border-radius: 2px;
+        padding: 4px;
+
+        p {
+          color: $color-black;
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

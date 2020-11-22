@@ -1,0 +1,129 @@
+.section-about {
+  background-color: #fff;
+  padding-bottom: 70px;
+  padding-top: 45px;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+  .wrap-about {
+    margin-top: -40px;
+    .about-item {
+      margin-top: 45px;
+    }
+  }
+}
+
+.about-item {
+  display: flex;
+  overflow: hidden;
+  .img {
+    flex: 0 0 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .text {
+    flex: 0 0 50%;
+    padding-left: 40px;
+    margin-top: 35px;
+    padding-right: 52px;
+    h2 {
+      line-height: 1.2em;
+      font-size: 36px;
+      color: $color-gray;
+    }
+    .desc {
+      margin-top: 20px;
+      color: #333333;
+      font-size: 15px;
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+      p {
+        line-height: 1.5em;
+        margin: 0;
+      }
+    }
+  }
+  &:hover {
+    .img:before {
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (min-width: 992px) and(max-width: 1200px) {
+  .section-about {
+    .wrap-about {
+      .text {
+        margin-top: 0px;
+        padding-right: 25px;
+        .heading {
+          margin: 0;
+        }
+        .desc {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 991px) {
+  .section-about {
+    .wrap-about {
+      .about-item {
+        .no-padding-right {
+          padding-right: 15px;
+          .text {
+            padding: 0;
+            margin: 0;
+          }
+        }
+        .no-padding-left {
+          padding-left: 15px;
+          .text {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-about {
+    .wrap-about {
+      .about-item {
+        flex-direction: column;
+        .no-padding-right {
+          padding-right: 15px;
+          .text {
+            padding: 0;
+            margin: 0;
+          }
+        }
+        .no-padding-left {
+          padding-left: 15px;
+          .text {
+            padding: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-about {
+    .wrap-about {
+      .about-item {
+        .heading {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

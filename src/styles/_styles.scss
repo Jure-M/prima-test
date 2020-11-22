@@ -1,0 +1,31 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+//LAYOUT - layout style
+@import "components/variables.scss";
+@import "components/Layout/nav.scss";
+//@import "components/Layout/content.scss";
+@import "components/Layout/roomsHome.scss";
+@import "components/Layout/aboutUsSection.scss";
+@import "components/Layout/bestSection.scss";
+@import "components/Layout/testimonials.scss";
+@import "components/Layout/excursionsSection.scss";
+@import "components/Layout/roomsPage.scss";
+@import "components/Layout/footer.scss";
+@import "components/Layout/banner.scss";
+@import "components/Layout/header.scss";
+@import "components/Layout/roomBook.scss";
+@import "components/Layout/aboutUsPage.scss";
+@import "components/Layout/contact.scss";
+@import "components/Layout/excursions.scss";
+@import "components/Layout/page404.scss";
+@import "components/Layout/sideBar.scss";
+@import "components/Layout/billingDetails.scss";
+@import "components/Layout/sidebarCart.scss";
+@import "components/Layout/checkOutCart.scss";
+@import "components/Layout/singleRoomText.scss";
+//BASE - style, variable, mixins
+@import "components/Base/mixin.scss";
+@import "components/Base/normalize.scss";
+//RESPONSIVE -
+@import "components/Responsive/desktop.scss";
+//@import "components/Responsive/tablet.scss";
+@import "components/Responsive/mobile.scss";

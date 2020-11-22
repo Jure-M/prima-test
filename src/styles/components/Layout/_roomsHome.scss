@@ -1,0 +1,123 @@
+.rooms {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #f2f2f2;
+
+  .title-room {
+    color: $color-black;
+    @extend .sky-h2;
+  }
+  .outline {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .wrap-rooms {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .wrap-box {
+      flex: 0 0 31%;
+      background: white;
+      margin-bottom: 30px;
+      @include transition-3;
+      .wrap-box-img {
+        width: 100%;
+      }
+
+      .sky-h4 {
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.15);
+        .rooms-content {
+          width: 100%;
+          .sky-h4 {
+            color: $color-blue-dark;
+          }
+        }
+        .box-img {
+          img {
+            transform: scale(1.1);
+            @include transition-3;
+          }
+        }
+      }
+      .rooms-content {
+        padding-bottom: 25px;
+        padding-top: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        .price {
+          color: $color-blue;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+      }
+      .box-img {
+        position: relative;
+        overflow: hidden;
+        img {
+          @include transition-3;
+        }
+      }
+    }
+  }
+  .rooms-p {
+    color: #ababab;
+    font-weight: 300;
+    font-size: 16px;
+    width: 48%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) and(max-width: 1200px) {
+  .rooms {
+    .rooms-p {
+      color: #ababab;
+      font-weight: 300;
+      font-size: 16px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 991px) {
+  .rooms {
+    padding-top: 25px;
+    .rooms-p {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .rooms {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .rooms-p {
+      width: 100%;
+    }
+    .wrap-rooms {
+      flex-direction: column;
+      .sky-h4 {
+        font-size: 20px !important;
+      }
+      .price {
+        font-size: 14px !important;
+      }
+    }
+  }
+}

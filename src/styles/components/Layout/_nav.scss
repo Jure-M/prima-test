@@ -1,0 +1,197 @@
+//2.1 Nav3
+
+//================ NAV================//
+.header-sky {
+  position: relative;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: lighten($color: $color-black, $amount: 5);
+
+  .header-top {
+    @include transition-2;
+    display: flow-root;
+    &.no-border {
+      border: none;
+    }
+    line-height: 35px;
+    ul {
+      li {
+        a {
+          color: #fff;
+          font-size: 12px;
+          font-weight: 400;
+          padding: 0px 10px;
+          cursor: pointer;
+          &:hover,
+          &:focus {
+            background: transparent;
+          }
+        }
+      }
+    }
+    .header-top-left {
+      float: left;
+      color: white;
+      span {
+        font-size: 12px;
+        margin-right: 15px;
+        font-weight: 400;
+        i {
+          font-size: 15px;
+          padding-right: 5px;
+        }
+      }
+    }
+    .header-top-right {
+      float: right;
+
+      .dropdown.dropdown-active {
+        .caret {
+          border-top: 0px dashed;
+          border-bottom: 4px dashed;
+        }
+        .dropdown-menu {
+          visibility: visible;
+          opacity: 1;
+          transform: translate(0px);
+          -moz-transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          @include transition-3;
+        }
+      }
+      .dropdown-menu {
+        transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        @include transition-3;
+        padding: 0px 0px;
+        visibility: none;
+        opacity: 0;
+        display: block;
+        z-index: 99;
+      }
+
+      .dropdown-menu {
+        border-radius: 0px;
+        padding: 1px;
+        min-width: 50px;
+        right: 0px;
+        left: auto;
+        margin-top: 0px;
+        border: none;
+        li {
+          a {
+            color: #232323;
+            padding: 6px 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+              background: $color-orange;
+              color: #fff !important;
+            }
+          }
+        }
+        .active {
+          a {
+            background: $color-orange;
+            color: #fff !important;
+          }
+        }
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+        margin-bottom: 0;
+        float: right;
+        .dropdown {
+          display: inline-block;
+          margin-left: -3px;
+          &:hover {
+            background: #fff;
+            a {
+              color: #232323;
+            }
+          }
+          &.open > a,
+          a:hover {
+            text-decoration: none;
+            color: #232323;
+          }
+          .dropdown-toggle {
+            display: inline;
+            padding: 11px 10px;
+            @media (min-width: 768px) and(max-width: 991px) {
+              padding: 11px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  background-color: $color-black;
+
+  .navbar {
+    border-radius: 0px;
+    border: none;
+    margin: 0;
+    padding: 0px;
+    .navbar-nav {
+      .active {
+        a {
+          color: red;
+        }
+      }
+      .nav-toggler {
+        fill: #fff;
+      }
+      .nav-item {
+        padding: 35px 25px;
+        .caret {
+          margin-left: 5px;
+        }
+        &:hover {
+          a {
+            background: transparent;
+            color: $color-hover;
+          }
+        }
+        .nav-link {
+          font-weight: 600;
+          font-size: 14px;
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          padding: 0px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          @media (max-width: 767px) {
+            &:hover {
+              color: $color-hover;
+              &:before {
+              }
+            }
+          }
+          &:focus {
+            background: transparent;
+          }
+          &:before {
+          }
+        }
+      }
+    }
+  }
+}
+
+//================ END NAV================//
